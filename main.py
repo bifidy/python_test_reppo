@@ -9,7 +9,7 @@ import requests
 import json
 
 app = Flask(__name__)
-APP_VERSION = 4
+APP_VERSION = 5
 @app.route('/', methods=['POST'])
 def index():
     args = req.json
