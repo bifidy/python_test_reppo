@@ -10,7 +10,7 @@ import json
 
 app = Flask(__name__)
 APP_VERSION = 5
-@app.route('/', methods=['POST'])
+@app.route('/', methods=['GET', 'POST'])
 def index():
     args = req.json
     if args != None:
